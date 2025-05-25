@@ -13,18 +13,18 @@ shayariLines.forEach((line, index) => {
   container.appendChild(div);
 });
 
-// Show lines one-by-one with delay
 const lines = document.querySelectorAll(".shayari-line");
 lines.forEach((line, index) => {
   setTimeout(() => {
     line.style.opacity = "1";
-  }, index * 3000); // 3s delay per line
+  }, index * 4000); // 4s delay
 });
 
-// Autoplay music (must be inline in HTML due to browser rules)
+// Auto-play music after slight delay
 window.addEventListener("DOMContentLoaded", () => {
   const audio = document.getElementById("bgMusic");
-  audio.play().catch(() => {
-    console.warn("Autoplay failed (browser policy)");
-  });
+  audio.muted = false;
+  setTimeout(() => {
+    audio.play().catch(() => console.warn("Interaction required"));
+  }, 1000);
 });
