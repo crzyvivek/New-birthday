@@ -2,57 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Birthday To Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday to Me</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- Floating Images -->
-  <div class="bubble-container">
-    <img src="img1.jpg" class="bubble bubble1" alt="Bubble 1" />
-    <img src="img2.jpg" class="bubble bubble2" alt="Bubble 2" />
-    <img src="img3.jpg" class="bubble bubble3" alt="Bubble 3" />
-    <img src="img4.jpg" class="bubble bubble4" alt="Bubble 4" />
+  <!-- Background Music -->
+  <audio id="bgMusic" src="music.mp3" autoplay loop></audio>
+
+  <!-- Main Heading -->
+  <div class="heading">
+    <h1>Happy Birthday to Me</h1>
   </div>
 
-  <!-- Realistic Cake Scene -->
-  <div class="cake-scene">
-    <div class="table-shadow"></div>
-    <div class="cake">
-      <div class="plate"></div>
-
-      <div class="layer layer1"></div>
-      <div class="layer layer2"></div>
-      <div class="layer layer3"></div>
-      <div class="layer layer4"></div>
-
-      <div class="icing-top"></div>
-      <div class="drip drip1"></div>
-      <div class="drip drip2"></div>
-      <div class="drip drip3"></div>
-      <div class="drip drip4"></div>
-
-      <div class="candle">
-        <div class="wick"></div>
-        <div class="flame"></div>
-      </div>
+  <!-- Cake Animation -->
+  <div class="cake">
+    <div class="layer layer-bottom"></div>
+    <div class="layer layer-middle"></div>
+    <div class="layer layer-top"></div>
+    <div class="icing"></div>
+    <div class="candle">
+      <div class="flame"></div>
     </div>
   </div>
 
-  <!-- Text Animation Sequence -->
-  <div class="text-sequence">
-    <p class="line" id="line1">Happy Birthday to Me!</p>
-    <p class="line" id="line2">Grateful for the lessons, the growth, the joy.</p>
-    <p class="line" id="line3">Celebrating strength, self-love, and purpose.</p>
-    <p class="line" id="line4">Manifesting a brighter future, one wish at a time.</p>
+  <!-- Floating Images -->
+  <div class="floating-images">
+    <img src="img1.jpg" class="float-img img1" />
+    <img src="img2.jpg" class="float-img img2" />
+    <img src="img3.jpg" class="float-img img3" />
+    <img src="img4.jpg" class="float-img img4" />
+  </div>
+
+  <!-- Shayari Section -->
+  <div class="shayari-box">
+    <p class="shayari-line" id="line1">Zindagi ke har mod pe khushiyaan rahein...</p>
+    <p class="shayari-line" id="line2">Har kadam pe muskurahat saath ho...</p>
+    <p class="shayari-line" id="line3">Kabhi na aaye gham ka saaya, aisa janamdin ho...</p>
   </div>
 
   <!-- Footer -->
-  <footer class="footer">Made by Vivek</footer>
+  <div class="footer">
+    <p>Made by Vivek</p>
+  </div>
 
-  <!-- Music & Interaction -->
-  <audio id="bgMusic" src="music.mp3" loop></audio>
-  <button id="startMusicBtn" class="music-btn">Tap to Play Music</button>
+  <script src="script.js"></script>
 </body>
 </html>
