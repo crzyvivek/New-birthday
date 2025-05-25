@@ -2,49 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Happy Birthday to Me</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Background Music -->
-  <audio id="bgMusic" src="music.mp3" autoplay loop></audio>
+  <audio id="bgMusic" src="music.mp3" autoplay loop muted></audio>
 
-  <!-- Main Heading -->
-  <div class="heading">
-    <h1>Happy Birthday to Me</h1>
+  <div class="floating-images">
+    <img src="img1.jpg" />
+    <img src="img2.jpg" />
+    <img src="img3.jpg" />
+    <img src="img4.jpg" />
   </div>
 
-  <!-- Cake Animation -->
+  <h1 class="heading">Happy Birthday to Me</h1>
+  
   <div class="cake">
-    <div class="layer layer-bottom"></div>
-    <div class="layer layer-middle"></div>
-    <div class="layer layer-top"></div>
-    <div class="icing"></div>
+    <div class="layer layer1"></div>
+    <div class="layer layer2"></div>
+    <div class="layer layer3"></div>
+    <div class="cream"></div>
     <div class="candle">
       <div class="flame"></div>
     </div>
   </div>
 
-  <!-- Floating Images -->
-  <div class="floating-images">
-    <img src="img1.jpg" class="float-img img1" />
-    <img src="img2.jpg" class="float-img img2" />
-    <img src="img3.jpg" class="float-img img3" />
-    <img src="img4.jpg" class="float-img img4" />
-  </div>
+  <div class="shayari-box"></div>
 
-  <!-- Shayari Section -->
-  <div class="shayari-box">
-    <p class="shayari-line" id="line1">Zindagi ke har mod pe khushiyaan rahein...</p>
-    <p class="shayari-line" id="line2">Har kadam pe muskurahat saath ho...</p>
-    <p class="shayari-line" id="line3">Kabhi na aaye gham ka saaya, aisa janamdin ho...</p>
-  </div>
-
-  <!-- Footer -->
-  <div class="footer">
-    <p>Made by Vivek</p>
-  </div>
+  <footer>Made by Vivek</footer>
 
   <script src="script.js"></script>
 </body>
