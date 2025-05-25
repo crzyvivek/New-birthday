@@ -2,44 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Happy Birthday to Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday To Me</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <div class="container">
-    <h1>Happy Birthday to Me</h1>
-    <p class="wish">Wishing myself a day full of happiness and cake!</p>
+  <!-- Floating Images -->
+  <div class="bubble-container">
+    <img src="img1.jpg" class="bubble bubble1" alt="Bubble 1" />
+    <img src="img2.jpg" class="bubble bubble2" alt="Bubble 2" />
+    <img src="img3.jpg" class="bubble bubble3" alt="Bubble 3" />
+    <img src="img4.jpg" class="bubble bubble4" alt="Bubble 4" />
+  </div>
 
-    <div class="cake-container">
-      <div class="cake">
-        <div class="layer layer-1"></div>
-        <div class="layer layer-2"></div>
-        <div class="layer layer-3"></div>
-        <div class="layer layer-4"></div>
-        <div class="cream"></div>
-        <div class="candle">
-          <div class="flame"></div>
-        </div>
+  <!-- Realistic Cake Scene -->
+  <div class="cake-scene">
+    <div class="table-shadow"></div>
+    <div class="cake">
+      <div class="plate"></div>
+
+      <div class="layer layer1"></div>
+      <div class="layer layer2"></div>
+      <div class="layer layer3"></div>
+      <div class="layer layer4"></div>
+
+      <div class="icing-top"></div>
+      <div class="drip drip1"></div>
+      <div class="drip drip2"></div>
+      <div class="drip drip3"></div>
+      <div class="drip drip4"></div>
+
+      <div class="candle">
+        <div class="wick"></div>
+        <div class="flame"></div>
       </div>
     </div>
   </div>
 
-  <div class="bubbles">
-    <img src="img1.jpg" class="bubble" style="--i:1" />
-    <img src="img2.jpg" class="bubble" style="--i:2" />
-    <img src="img3.jpg" class="bubble" style="--i:3" />
-    <img src="img4.jpg" class="bubble" style="--i:4" />
+  <!-- Text Animation Sequence -->
+  <div class="text-sequence">
+    <p class="line" id="line1">Happy Birthday to Me!</p>
+    <p class="line" id="line2">Grateful for the lessons, the growth, the joy.</p>
+    <p class="line" id="line3">Celebrating strength, self-love, and purpose.</p>
+    <p class="line" id="line4">Manifesting a brighter future, one wish at a time.</p>
   </div>
 
-  <div class="credit">Made by Vivek</div>
+  <!-- Footer -->
+  <footer class="footer">Made by Vivek</footer>
 
+  <!-- Music & Interaction -->
+  <audio id="bgMusic" src="music.mp3" loop></audio>
   <button id="startMusicBtn" class="music-btn">Tap to Play Music</button>
-  <audio id="bgMusic" loop>
-    <source src="music.mp3" type="audio/mpeg" />
-    Your browser does not support the audio element.
-  </audio>
-
-  <script src="script.js"></script>
 </body>
 </html>
